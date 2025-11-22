@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/style/style.css">
+	<title>3d</title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="header__container">
+				<a href="#" class="logo">
+					<img src="./assets/images/logo.svg" alt="READY 3D">
+				</a>
+				<div class="header__menu__wrap">
+					<div class="dropdown ">
+						<span></span><span></span><span></span>
+					</div>
+					<div class="menu__wrap">
+						<nav class="menu-top">
+							<ul>
+								<li class="menu-item has-dropdown category-item">
+									<a href="#" >
+										<img src="./assets/images/header-menu-icon.svg" alt="3D Printable">
+										3D Models</a>
+									<div class="header-dropdown">										
+										<div class="header-col">
+											<span>Categories</span>
+											<ul>
+												<li class="sub-category-item">
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path d="M15.8419 13.355C16.2955 13.4012 16.6494 13.7839 16.6496 14.2497C16.6496 14.7156 16.2956 15.0991 15.8419 15.1453L15.7496 15.1497H2.24961C1.75273 15.1495 1.34961 14.7467 1.34961 14.2497C1.34977 13.7529 1.75283 13.3499 2.24961 13.3497H15.7496L15.8419 13.355ZM13.4996 3.59998C13.9371 3.59998 14.3565 3.77414 14.6659 4.08337C14.9753 4.39274 15.1492 4.81219 15.1493 5.24968V11.25C15.1493 11.6876 14.9753 12.1069 14.6659 12.4163C14.3565 12.7256 13.9371 12.8997 13.4996 12.8997H4.49961C4.06214 12.8996 3.64265 12.7256 3.3333 12.4163C3.02399 12.1069 2.8499 11.6875 2.8499 11.25V5.24968C2.84998 4.81227 3.02405 4.39272 3.3333 4.08337L3.45371 3.97351C3.74724 3.73299 4.11681 3.60007 4.49961 3.59998H13.4996ZM4.6499 11.0997H13.3493V5.39998H4.6499V11.0997Z" fill="#1B1D2A"/>
+													</svg>
+														Industrial</a>
+												<ul>
+												<li class="sub-category-item"><a href="#">Kitchenware</a></li>
+												<li class="sub-category-item"><a href="#">Household Tools</a></li>
+												<li class="sub-category-item"><a href="#">Industrial Machine</a></li>
+												<li class="sub-category-item"><a href="#">Household Tools</a></li>
+												<li class="sub-category-item"><a href="#">Bicycle</a></li>
+											</ul>
+												</li>
+												<li class="sub-category-item">													
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path d="M15.8419 13.355C16.2955 13.4012 16.6494 13.7839 16.6496 14.2497C16.6496 14.7156 16.2956 15.0991 15.8419 15.1453L15.7496 15.1497H2.24961C1.75273 15.1495 1.34961 14.7467 1.34961 14.2497C1.34977 13.7529 1.75283 13.3499 2.24961 13.3497H15.7496L15.8419 13.355ZM13.4996 3.59998C13.9371 3.59998 14.3565 3.77414 14.6659 4.08337C14.9753 4.39274 15.1492 4.81219 15.1493 5.24968V11.25C15.1493 11.6876 14.9753 12.1069 14.6659 12.4163C14.3565 12.7256 13.9371 12.8997 13.4996 12.8997H4.49961C4.06214 12.8996 3.64265 12.7256 3.3333 12.4163C3.02399 12.1069 2.8499 11.6875 2.8499 11.25V5.24968C2.84998 4.81227 3.02405 4.39272 3.3333 4.08337L3.45371 3.97351C3.74724 3.73299 4.11681 3.60007 4.49961 3.59998H13.4996ZM4.6499 11.0997H13.3493V5.39998H4.6499V11.0997Z" fill="#1B1D2A"/>
+													</svg>
+														Furniture & Home</a></li>
+												<li class="sub-category-item">
+													
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path d="M15.8419 13.355C16.2955 13.4012 16.6494 13.7839 16.6496 14.2497C16.6496 14.7156 16.2956 15.0991 15.8419 15.1453L15.7496 15.1497H2.24961C1.75273 15.1495 1.34961 14.7467 1.34961 14.2497C1.34977 13.7529 1.75283 13.3499 2.24961 13.3497H15.7496L15.8419 13.355ZM13.4996 3.59998C13.9371 3.59998 14.3565 3.77414 14.6659 4.08337C14.9753 4.39274 15.1492 4.81219 15.1493 5.24968V11.25C15.1493 11.6876 14.9753 12.1069 14.6659 12.4163C14.3565 12.7256 13.9371 12.8997 13.4996 12.8997H4.49961C4.06214 12.8996 3.64265 12.7256 3.3333 12.4163C3.02399 12.1069 2.8499 11.6875 2.8499 11.25V5.24968C2.84998 4.81227 3.02405 4.39272 3.3333 4.08337L3.45371 3.97351C3.74724 3.73299 4.11681 3.60007 4.49961 3.59998H13.4996ZM4.6499 11.0997H13.3493V5.39998H4.6499V11.0997Z" fill="#1B1D2A"/>
+													</svg>
+														Electronics & Gadgets</a></li>
+												<li class="sub-category-item">
+													
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path d="M15.8419 13.355C16.2955 13.4012 16.6494 13.7839 16.6496 14.2497C16.6496 14.7156 16.2956 15.0991 15.8419 15.1453L15.7496 15.1497H2.24961C1.75273 15.1495 1.34961 14.7467 1.34961 14.2497C1.34977 13.7529 1.75283 13.3499 2.24961 13.3497H15.7496L15.8419 13.355ZM13.4996 3.59998C13.9371 3.59998 14.3565 3.77414 14.6659 4.08337C14.9753 4.39274 15.1492 4.81219 15.1493 5.24968V11.25C15.1493 11.6876 14.9753 12.1069 14.6659 12.4163C14.3565 12.7256 13.9371 12.8997 13.4996 12.8997H4.49961C4.06214 12.8996 3.64265 12.7256 3.3333 12.4163C3.02399 12.1069 2.8499 11.6875 2.8499 11.25V5.24968C2.84998 4.81227 3.02405 4.39272 3.3333 4.08337L3.45371 3.97351C3.74724 3.73299 4.11681 3.60007 4.49961 3.59998H13.4996ZM4.6499 11.0997H13.3493V5.39998H4.6499V11.0997Z" fill="#1B1D2A"/>
+													</svg>
+														Animals & Pets</a></li>
+												<li class="sub-category-item">
+													
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path d="M15.8419 13.355C16.2955 13.4012 16.6494 13.7839 16.6496 14.2497C16.6496 14.7156 16.2956 15.0991 15.8419 15.1453L15.7496 15.1497H2.24961C1.75273 15.1495 1.34961 14.7467 1.34961 14.2497C1.34977 13.7529 1.75283 13.3499 2.24961 13.3497H15.7496L15.8419 13.355ZM13.4996 3.59998C13.9371 3.59998 14.3565 3.77414 14.6659 4.08337C14.9753 4.39274 15.1492 4.81219 15.1493 5.24968V11.25C15.1493 11.6876 14.9753 12.1069 14.6659 12.4163C14.3565 12.7256 13.9371 12.8997 13.4996 12.8997H4.49961C4.06214 12.8996 3.64265 12.7256 3.3333 12.4163C3.02399 12.1069 2.8499 11.6875 2.8499 11.25V5.24968C2.84998 4.81227 3.02405 4.39272 3.3333 4.08337L3.45371 3.97351C3.74724 3.73299 4.11681 3.60007 4.49961 3.59998H13.4996ZM4.6499 11.0997H13.3493V5.39998H4.6499V11.0997Z" fill="#1B1D2A"/>
+													</svg>
+														Characters & Creatures</a>
+														<ul>
+														<li class="sub-category-item"><a href="#">Kitchenware</a></li>
+														<li class="sub-category-item"><a href="#">Household Tools</a></li>
+														<li class="sub-category-item"><a href="#">Industrial Machine</a></li>
+														<li class="sub-category-item"><a href="#">Household Tools</a></li>
+														<li class="sub-category-item"><a href="#">Bicycle</a></li>
+													</ul>		
+													</li>
+												<li class="sub-category-item">
+													
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path d="M15.8419 13.355C16.2955 13.4012 16.6494 13.7839 16.6496 14.2497C16.6496 14.7156 16.2956 15.0991 15.8419 15.1453L15.7496 15.1497H2.24961C1.75273 15.1495 1.34961 14.7467 1.34961 14.2497C1.34977 13.7529 1.75283 13.3499 2.24961 13.3497H15.7496L15.8419 13.355ZM13.4996 3.59998C13.9371 3.59998 14.3565 3.77414 14.6659 4.08337C14.9753 4.39274 15.1492 4.81219 15.1493 5.24968V11.25C15.1493 11.6876 14.9753 12.1069 14.6659 12.4163C14.3565 12.7256 13.9371 12.8997 13.4996 12.8997H4.49961C4.06214 12.8996 3.64265 12.7256 3.3333 12.4163C3.02399 12.1069 2.8499 11.6875 2.8499 11.25V5.24968C2.84998 4.81227 3.02405 4.39272 3.3333 4.08337L3.45371 3.97351C3.74724 3.73299 4.11681 3.60007 4.49961 3.59998H13.4996ZM4.6499 11.0997H13.3493V5.39998H4.6499V11.0997Z" fill="#1B1D2A"/>
+													</svg>
+														Fashion & Style</a></li>
+												<li class="sub-category-item">
+													
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path d="M15.8419 13.355C16.2955 13.4012 16.6494 13.7839 16.6496 14.2497C16.6496 14.7156 16.2956 15.0991 15.8419 15.1453L15.7496 15.1497H2.24961C1.75273 15.1495 1.34961 14.7467 1.34961 14.2497C1.34977 13.7529 1.75283 13.3499 2.24961 13.3497H15.7496L15.8419 13.355ZM13.4996 3.59998C13.9371 3.59998 14.3565 3.77414 14.6659 4.08337C14.9753 4.39274 15.1492 4.81219 15.1493 5.24968V11.25C15.1493 11.6876 14.9753 12.1069 14.6659 12.4163C14.3565 12.7256 13.9371 12.8997 13.4996 12.8997H4.49961C4.06214 12.8996 3.64265 12.7256 3.3333 12.4163C3.02399 12.1069 2.8499 11.6875 2.8499 11.25V5.24968C2.84998 4.81227 3.02405 4.39272 3.3333 4.08337L3.45371 3.97351C3.74724 3.73299 4.11681 3.60007 4.49961 3.59998H13.4996ZM4.6499 11.0997H13.3493V5.39998H4.6499V11.0997Z" fill="#1B1D2A"/>
+													</svg>
+														Nature & Plants</a></li>
+												<li class="sub-category-item">
+													
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path d="M15.8419 13.355C16.2955 13.4012 16.6494 13.7839 16.6496 14.2497C16.6496 14.7156 16.2956 15.0991 15.8419 15.1453L15.7496 15.1497H2.24961C1.75273 15.1495 1.34961 14.7467 1.34961 14.2497C1.34977 13.7529 1.75283 13.3499 2.24961 13.3497H15.7496L15.8419 13.355ZM13.4996 3.59998C13.9371 3.59998 14.3565 3.77414 14.6659 4.08337C14.9753 4.39274 15.1492 4.81219 15.1493 5.24968V11.25C15.1493 11.6876 14.9753 12.1069 14.6659 12.4163C14.3565 12.7256 13.9371 12.8997 13.4996 12.8997H4.49961C4.06214 12.8996 3.64265 12.7256 3.3333 12.4163C3.02399 12.1069 2.8499 11.6875 2.8499 11.25V5.24968C2.84998 4.81227 3.02405 4.39272 3.3333 4.08337L3.45371 3.97351C3.74724 3.73299 4.11681 3.60007 4.49961 3.59998H13.4996ZM4.6499 11.0997H13.3493V5.39998H4.6499V11.0997Z" fill="#1B1D2A"/>
+													</svg>
+														Places & Travel</a></li>
+												<li class="sub-category-item">
+													
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path d="M15.8419 13.355C16.2955 13.4012 16.6494 13.7839 16.6496 14.2497C16.6496 14.7156 16.2956 15.0991 15.8419 15.1453L15.7496 15.1497H2.24961C1.75273 15.1495 1.34961 14.7467 1.34961 14.2497C1.34977 13.7529 1.75283 13.3499 2.24961 13.3497H15.7496L15.8419 13.355ZM13.4996 3.59998C13.9371 3.59998 14.3565 3.77414 14.6659 4.08337C14.9753 4.39274 15.1492 4.81219 15.1493 5.24968V11.25C15.1493 11.6876 14.9753 12.1069 14.6659 12.4163C14.3565 12.7256 13.9371 12.8997 13.4996 12.8997H4.49961C4.06214 12.8996 3.64265 12.7256 3.3333 12.4163C3.02399 12.1069 2.8499 11.6875 2.8499 11.25V5.24968C2.84998 4.81227 3.02405 4.39272 3.3333 4.08337L3.45371 3.97351C3.74724 3.73299 4.11681 3.60007 4.49961 3.59998H13.4996ZM4.6499 11.0997H13.3493V5.39998H4.6499V11.0997Z" fill="#1B1D2A"/>
+													</svg>
+														Weapons & Military</a></li>													
+											</ul>
+											<ul>
+												<li  class="sub-category-item"><a href="#">Science & Technology</a></li>
+												<li  class="sub-category-item"><a href="#">Cars & Vehicles</a></li>
+												<li  class="sub-category-item"><a href="#">Architecture</a></li>
+												<li  class="sub-category-item"><a href="#">Art & Abstract</a></li>
+												<li  class="sub-category-item"><a href="#">Culture</a></li>
+												<li  class="sub-category-item"><a href="#">Food & Drink</a></li>
+												<li  class="sub-category-item"><a href="#">People</a></li>
+												<li  class="sub-category-item"><a href="#">Sports & Fitness</a></li>
+												<li  class="sub-category-item"><a href="#">Various</a></li>
+											</ul>
+										</div>
+										<div class="header-col header-col-budget">
+											<span>Budget</span>
+											<ul>
+												<li><a href="#">
+													<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+												<path d="M15.8419 13.355C16.2955 13.4012 16.6494 13.7839 16.6496 14.2497C16.6496 14.7156 16.2956 15.0991 15.8419 15.1453L15.7496 15.1497H2.24961C1.75273 15.1495 1.34961 14.7467 1.34961 14.2497C1.34977 13.7529 1.75283 13.3499 2.24961 13.3497H15.7496L15.8419 13.355ZM13.4996 3.59998C13.9371 3.59998 14.3565 3.77414 14.6659 4.08337C14.9753 4.39274 15.1492 4.81219 15.1493 5.24968V11.25C15.1493 11.6876 14.9753 12.1069 14.6659 12.4163C14.3565 12.7256 13.9371 12.8997 13.4996 12.8997H4.49961C4.06214 12.8996 3.64265 12.7256 3.3333 12.4163C3.02399 12.1069 2.8499 11.6875 2.8499 11.25V5.24968C2.84998 4.81227 3.02405 4.39272 3.3333 4.08337L3.45371 3.97351C3.74724 3.73299 4.11681 3.60007 4.49961 3.59998H13.4996ZM4.6499 11.0997H13.3493V5.39998H4.6499V11.0997Z" fill="#1B1D2A"/>
+												</svg>
+													Under 10$</a></li>
+												<li>
+													<a href="#">
+													<img src="./assets/images/list-icon-img.svg" alt="">
+													10–20$</a>
+												</li>
+												<li>
+													<a href="#">
+												<img src="./assets/images/list-icon-img.svg" alt="">
+														20$+</a></li>
+												<li>
+													<a href="#">
+												<img src="./assets/images/list-icon-img.svg" alt="">
+														Free</a></li>
+												<li>
+													<a href="#">
+												<img src="./assets/images/list-icon-img.svg" alt="">
+														On Sale</a></a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="menu-item menu-item category-item">
+									<a href="#">
+										<img src="./assets/images/header-menu-icon.svg" alt="3D Printable">
+										3D Printable</a>
+								<div class="header-dropdown">										
+										<div class="header-col">
+											<span>Categories</span>											
+											<ul>
+												<li class="sub-category-item">
+													<a href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path d="M15.8419 13.355C16.2955 13.4012 16.6494 13.7839 16.6496 14.2497C16.6496 14.7156 16.2956 15.0991 15.8419 15.1453L15.7496 15.1497H2.24961C1.75273 15.1495 1.34961 14.7467 1.34961 14.2497C1.34977 13.7529 1.75283 13.3499 2.24961 13.3497H15.7496L15.8419 13.355ZM13.4996 3.59998C13.9371 3.59998 14.3565 3.77414 14.6659 4.08337C14.9753 4.39274 15.1492 4.81219 15.1493 5.24968V11.25C15.1493 11.6876 14.9753 12.1069 14.6659 12.4163C14.3565 12.7256 13.9371 12.8997 13.4996 12.8997H4.49961C4.06214 12.8996 3.64265 12.7256 3.3333 12.4163C3.02399 12.1069 2.8499 11.6875 2.8499 11.25V5.24968C2.84998 4.81227 3.02405 4.39272 3.3333 4.08337L3.45371 3.97351C3.74724 3.73299 4.11681 3.60007 4.49961 3.59998H13.4996ZM4.6499 11.0997H13.3493V5.39998H4.6499V11.0997Z" fill="#1B1D2A"/>
+													</svg>
+														Industrial</a>
+												<ul>
+												<li class="sub-category-item"><a href="#">Kitchenware</a></li>
+												<li class="sub-category-item"><a href="#">Household Tools</a></li>
+												<li class="sub-category-item"><a href="#">Industrial Machine</a></li>
+												<li class="sub-category-item"><a href="#">Household Tools</a></li>
+												<li class="sub-category-item"><a href="#">Bicycle</a></li>
+											</ul>
+												</li>												
+											</ul>											
+										</div>
+										<div class="header-col header-col-budget">
+											<span>Budget</span>
+											<ul>
+												<li><a href="#">
+													<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+												<path d="M15.8419 13.355C16.2955 13.4012 16.6494 13.7839 16.6496 14.2497C16.6496 14.7156 16.2956 15.0991 15.8419 15.1453L15.7496 15.1497H2.24961C1.75273 15.1495 1.34961 14.7467 1.34961 14.2497C1.34977 13.7529 1.75283 13.3499 2.24961 13.3497H15.7496L15.8419 13.355ZM13.4996 3.59998C13.9371 3.59998 14.3565 3.77414 14.6659 4.08337C14.9753 4.39274 15.1492 4.81219 15.1493 5.24968V11.25C15.1493 11.6876 14.9753 12.1069 14.6659 12.4163C14.3565 12.7256 13.9371 12.8997 13.4996 12.8997H4.49961C4.06214 12.8996 3.64265 12.7256 3.3333 12.4163C3.02399 12.1069 2.8499 11.6875 2.8499 11.25V5.24968C2.84998 4.81227 3.02405 4.39272 3.3333 4.08337L3.45371 3.97351C3.74724 3.73299 4.11681 3.60007 4.49961 3.59998H13.4996ZM4.6499 11.0997H13.3493V5.39998H4.6499V11.0997Z" fill="#1B1D2A"/>
+												</svg>
+													Under 10$</a></li>
+												<li>
+													<a href="#">
+													<img src="./assets/images/list-icon-img.svg" alt="">
+													10–20$</a>
+												</li>
+												<li>
+													<a href="#">
+												<img src="./assets/images/list-icon-img.svg" alt="">
+														20$+</a></li>
+												<li>
+													<a href="#">
+												<img src="./assets/images/list-icon-img.svg" alt="">
+														Free</a></li>
+												<li>
+													<a href="#">
+												<img src="./assets/images/list-icon-img.svg" alt="">
+														On Sale</a></a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="menu-item menu-item category-item">
+									<a href="#">
+										<img src="./assets/images/header-menu-icon.svg" alt="3D Printable">
+										CG Textures</a>
+									</li>
+								<li class="menu-item menu-item category-item">
+									<a href="#">
+											<img src="./assets/images/header-menu-icon.svg" alt="3D Printable">
+										Design Services</a>
+								</li>
+							</ul>
+						</nav>
+						<nav  class="menu-bottom">
+							<ul>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Contact us</a></li>
+								<li><a href="#">Help</a></li>
+								<li><a href="#">Forum</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				</div>
+		</div>
+	</header>
+	
+	<div class="hero">
+    <div class="hero-container">
+        <div class="hero__content">
+            <div class="hero__text">
+                <h1 class="hero__title">
+                <span class="hero__title">Your 3D Ecosystem</span><br>
+                <span class="hero__title-line2">Models, Design &amp; Printing</span>
+                </h1>
+                <p class="static-page__introduction-subtitle">
+                    Discover and bring 3D ideas to life with a complete ecosystem:<br>digital models, freelance designers, and on-demand 3D printing.
+                </p>
+                <div class="hero__buttons">
+                    <button class="button btn-primary">Shop Models 
+											<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M6.7902 0.22764L11.7708 5.18784C12.0768 5.49204 12.0768 5.98584 11.7708 6.29004L6.7908 11.2496C6.64356 11.3958 6.44449 11.4779 6.237 11.4779C6.02951 11.4779 5.83044 11.3958 5.6832 11.2496C5.61054 11.1774 5.55289 11.0916 5.51354 10.997C5.47419 10.9024 5.45394 10.801 5.45394 10.6985C5.45394 10.5961 5.47419 10.4947 5.51354 10.4001C5.55289 10.3055 5.61054 10.2197 5.6832 10.1474L9.3282 6.51804H0.7824C0.3504 6.51804 0 6.16944 0 5.73864C0 5.30844 0.3504 4.95924 0.7824 4.95924H9.3282L5.6838 1.32984C5.61114 1.25763 5.55349 1.17176 5.51414 1.07718C5.47479 0.982603 5.45454 0.881177 5.45454 0.77874C5.45454 0.676303 5.47479 0.574877 5.51414 0.480298C5.55349 0.385718 5.61114 0.299852 5.6838 0.22764C5.83099 0.081812 6.0298 0 6.237 0C6.4442 0 6.64301 0.081812 6.7902 0.22764Z" fill="white"/>
+											</svg>
+											</button>
+                    <button class="button btn-primary">Hire a Designer
+											<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M6.7902 0.22764L11.7708 5.18784C12.0768 5.49204 12.0768 5.98584 11.7708 6.29004L6.7908 11.2496C6.64356 11.3958 6.44449 11.4779 6.237 11.4779C6.02951 11.4779 5.83044 11.3958 5.6832 11.2496C5.61054 11.1774 5.55289 11.0916 5.51354 10.997C5.47419 10.9024 5.45394 10.801 5.45394 10.6985C5.45394 10.5961 5.47419 10.4947 5.51354 10.4001C5.55289 10.3055 5.61054 10.2197 5.6832 10.1474L9.3282 6.51804H0.7824C0.3504 6.51804 0 6.16944 0 5.73864C0 5.30844 0.3504 4.95924 0.7824 4.95924H9.3282L5.6838 1.32984C5.61114 1.25763 5.55349 1.17176 5.51414 1.07718C5.47479 0.982603 5.45454 0.881177 5.45454 0.77874C5.45454 0.676303 5.47479 0.574877 5.51414 0.480298C5.55349 0.385718 5.61114 0.299852 5.6838 0.22764C5.83099 0.081812 6.0298 0 6.237 0C6.4442 0 6.64301 0.081812 6.7902 0.22764Z" fill="white"/>
+											</svg>
+										</button>
+                    <button class="button btn-primary">Order 3D Print
+											<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M6.7902 0.22764L11.7708 5.18784C12.0768 5.49204 12.0768 5.98584 11.7708 6.29004L6.7908 11.2496C6.64356 11.3958 6.44449 11.4779 6.237 11.4779C6.02951 11.4779 5.83044 11.3958 5.6832 11.2496C5.61054 11.1774 5.55289 11.0916 5.51354 10.997C5.47419 10.9024 5.45394 10.801 5.45394 10.6985C5.45394 10.5961 5.47419 10.4947 5.51354 10.4001C5.55289 10.3055 5.61054 10.2197 5.6832 10.1474L9.3282 6.51804H0.7824C0.3504 6.51804 0 6.16944 0 5.73864C0 5.30844 0.3504 4.95924 0.7824 4.95924H9.3282L5.6838 1.32984C5.61114 1.25763 5.55349 1.17176 5.51414 1.07718C5.47479 0.982603 5.45454 0.881177 5.45454 0.77874C5.45454 0.676303 5.47479 0.574877 5.51414 0.480298C5.55349 0.385718 5.61114 0.299852 5.6838 0.22764C5.83099 0.081812 6.0298 0 6.237 0C6.4442 0 6.64301 0.081812 6.7902 0.22764Z" fill="white"/>
+												</svg>
+										</button>
+                </div>
+            </div>
+
+            <div class="hero__model">
+                <iframe id="landing-model" title="My 3D Model" class="hero__iframe" frameborder="0" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen="" mozallowfullscreen="true" webkitallowfullscreen="true" xr-spatial-tracking="true" execution-while-out-of-viewport="true" execution-while-not-rendered="true" web-share="true" src="https://sketchfab.com/models/af37998187a5488dab0113f4ad757f7e/embed?annotations_visible=0&amp;autospin=0&amp;autostart=1&amp;camera=0&amp;double_click=0&amp;internal=1&amp;max_texture_size=1024&amp;orbit_constraint_pan=1&amp;orbit_constraint_zoom_in=10&amp;orbit_constraint_zoom_out=120&amp;preload=1&amp;scrollwheel=0&amp;sound_enable=0&amp;transparent=1&amp;ui_animations=0&amp;ui_annotations=0&amp;ui_ar=1&amp;ui_ar_help=1&amp;ui_color=white&amp;ui_fadeout=0&amp;ui_fullscreen=1&amp;ui_help=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_settings=0&amp;ui_stop=0&amp;ui_theatre=0&amp;ui_theme=dark&amp;ui_vr=0&amp;ui_watermark=0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="category">
+	<div class="container">
+		<div class="category__container">
+			<div class="category__items">
+				<a href="#" class="category__item">
+						<img class="category__item__img" src="./assets/images/category-img1.webp" alt="3D Models">
+					
+					<div class="category__item__content">
+						<div class="category__item__title">3D Models							
+							<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M6.7902 0.22764L11.7708 5.18784C12.0768 5.49204 12.0768 5.98584 11.7708 6.29004L6.7908 11.2496C6.64356 11.3958 6.44449 11.4779 6.237 11.4779C6.02951 11.4779 5.83044 11.3958 5.6832 11.2496C5.61054 11.1774 5.55289 11.0916 5.51354 10.997C5.47419 10.9024 5.45394 10.801 5.45394 10.6985C5.45394 10.5961 5.47419 10.4947 5.51354 10.4001C5.55289 10.3055 5.61054 10.2197 5.6832 10.1474L9.3282 6.51804H0.7824C0.3504 6.51804 0 6.16944 0 5.73864C0 5.30844 0.3504 4.95924 0.7824 4.95924H9.3282L5.6838 1.32984C5.61114 1.25763 5.55349 1.17176 5.51414 1.07718C5.47479 0.982603 5.45454 0.881177 5.45454 0.77874C5.45454 0.676303 5.47479 0.574877 5.51414 0.480298C5.55349 0.385718 5.61114 0.299852 5.6838 0.22764C5.83099 0.081812 6.0298 0 6.237 0C6.4442 0 6.64301 0.081812 6.7902 0.22764Z" fill="white"/>
+								</svg>
+						</div>
+						<div class="category__item__descr">Ready-to-use digital assets</div>
+					</div>
+				</a>
+				<a href="#" class="category__item">
+						<img class="category__item__img" src="./assets/images/category-img2.webp" alt="3D Printable">
+					
+					<div class="category__item__content">
+						<div class="category__item__title">
+							3D Printable
+							<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M6.7902 0.22764L11.7708 5.18784C12.0768 5.49204 12.0768 5.98584 11.7708 6.29004L6.7908 11.2496C6.64356 11.3958 6.44449 11.4779 6.237 11.4779C6.02951 11.4779 5.83044 11.3958 5.6832 11.2496C5.61054 11.1774 5.55289 11.0916 5.51354 10.997C5.47419 10.9024 5.45394 10.801 5.45394 10.6985C5.45394 10.5961 5.47419 10.4947 5.51354 10.4001C5.55289 10.3055 5.61054 10.2197 5.6832 10.1474L9.3282 6.51804H0.7824C0.3504 6.51804 0 6.16944 0 5.73864C0 5.30844 0.3504 4.95924 0.7824 4.95924H9.3282L5.6838 1.32984C5.61114 1.25763 5.55349 1.17176 5.51414 1.07718C5.47479 0.982603 5.45454 0.881177 5.45454 0.77874C5.45454 0.676303 5.47479 0.574877 5.51414 0.480298C5.55349 0.385718 5.61114 0.299852 5.6838 0.22764C5.83099 0.081812 6.0298 0 6.237 0C6.4442 0 6.64301 0.081812 6.7902 0.22764Z" fill="white"/>
+								</svg>
+						</div>
+						<div class="category__item__descr">Optimized for real printing</div>
+					</div>
+				</a>
+				<a href="#" class="category__item">
+						<img class="category__item__img" src="./assets/images/category-img3.webp" alt="CG Textures ">
+					
+					<div class="category__item__content">
+						<div class="category__item__title">
+							CG Textures 
+							<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M6.7902 0.22764L11.7708 5.18784C12.0768 5.49204 12.0768 5.98584 11.7708 6.29004L6.7908 11.2496C6.64356 11.3958 6.44449 11.4779 6.237 11.4779C6.02951 11.4779 5.83044 11.3958 5.6832 11.2496C5.61054 11.1774 5.55289 11.0916 5.51354 10.997C5.47419 10.9024 5.45394 10.801 5.45394 10.6985C5.45394 10.5961 5.47419 10.4947 5.51354 10.4001C5.55289 10.3055 5.61054 10.2197 5.6832 10.1474L9.3282 6.51804H0.7824C0.3504 6.51804 0 6.16944 0 5.73864C0 5.30844 0.3504 4.95924 0.7824 4.95924H9.3282L5.6838 1.32984C5.61114 1.25763 5.55349 1.17176 5.51414 1.07718C5.47479 0.982603 5.45454 0.881177 5.45454 0.77874C5.45454 0.676303 5.47479 0.574877 5.51414 0.480298C5.55349 0.385718 5.61114 0.299852 5.6838 0.22764C5.83099 0.081812 6.0298 0 6.237 0C6.4442 0 6.64301 0.081812 6.7902 0.22764Z" fill="white"/>
+								</svg>
+						</div>
+						<div class="category__item__descr">High-quality PBR materials</div>
+					</div>
+				</a>
+				<a href="#" class="category__item">
+						<img class="category__item__img" src="./assets/images/category-img4.webp" alt="Design Services">
+					
+					<div class="category__item__content">
+						<div class="category__item__title">
+							<span>Design Services</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M6.7902 0.22764L11.7708 5.18784C12.0768 5.49204 12.0768 5.98584 11.7708 6.29004L6.7908 11.2496C6.64356 11.3958 6.44449 11.4779 6.237 11.4779C6.02951 11.4779 5.83044 11.3958 5.6832 11.2496C5.61054 11.1774 5.55289 11.0916 5.51354 10.997C5.47419 10.9024 5.45394 10.801 5.45394 10.6985C5.45394 10.5961 5.47419 10.4947 5.51354 10.4001C5.55289 10.3055 5.61054 10.2197 5.6832 10.1474L9.3282 6.51804H0.7824C0.3504 6.51804 0 6.16944 0 5.73864C0 5.30844 0.3504 4.95924 0.7824 4.95924H9.3282L5.6838 1.32984C5.61114 1.25763 5.55349 1.17176 5.51414 1.07718C5.47479 0.982603 5.45454 0.881177 5.45454 0.77874C5.45454 0.676303 5.47479 0.574877 5.51414 0.480298C5.55349 0.385718 5.61114 0.299852 5.6838 0.22764C5.83099 0.081812 6.0298 0 6.237 0C6.4442 0 6.64301 0.081812 6.7902 0.22764Z" fill="white"/>
+								</svg>
+						</div>
+						<div class="category__item__descr">Custom 3D design on demand</div>
+					</div>
+				</a>
+				<a href="#" class="category__item">
+						<img class="category__item__img" src="./assets/images/category-img5.webp" alt="3D Printing">
+					
+					<div class="category__item__content">
+						<div class="category__item__title">
+							3D Printing
+							<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M6.7902 0.22764L11.7708 5.18784C12.0768 5.49204 12.0768 5.98584 11.7708 6.29004L6.7908 11.2496C6.64356 11.3958 6.44449 11.4779 6.237 11.4779C6.02951 11.4779 5.83044 11.3958 5.6832 11.2496C5.61054 11.1774 5.55289 11.0916 5.51354 10.997C5.47419 10.9024 5.45394 10.801 5.45394 10.6985C5.45394 10.5961 5.47419 10.4947 5.51354 10.4001C5.55289 10.3055 5.61054 10.2197 5.6832 10.1474L9.3282 6.51804H0.7824C0.3504 6.51804 0 6.16944 0 5.73864C0 5.30844 0.3504 4.95924 0.7824 4.95924H9.3282L5.6838 1.32984C5.61114 1.25763 5.55349 1.17176 5.51414 1.07718C5.47479 0.982603 5.45454 0.881177 5.45454 0.77874C5.45454 0.676303 5.47479 0.574877 5.51414 0.480298C5.55349 0.385718 5.61114 0.299852 5.6838 0.22764C5.83099 0.081812 6.0298 0 6.237 0C6.4442 0 6.64301 0.081812 6.7902 0.22764Z" fill="white"/>
+								</svg>
+						</div>
+						<div class="category__item__descr">Print your models easily</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="models">
+	<div class="container-l">
+		<div class="models__container">
+			<div class="models__title justify-title">
+				<div class="models__title__wrap justify-title__wrap">
+					<h2>Top 3D models</h2>
+					<p>The most popular and high-quality 3D assets chosen by our creators.</p>
+				</div>
+				<a href="#" class="button btn-secondary">
+					Browse all 3D models
+					<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M6.7902 0.22764L11.7708 5.18784C12.0768 5.49204 12.0768 5.98584 11.7708 6.29004L6.7908 11.2496C6.64356 11.3958 6.44449 11.4779 6.237 11.4779C6.02951 11.4779 5.83044 11.3958 5.6832 11.2496C5.61054 11.1774 5.55289 11.0916 5.51354 10.997C5.47419 10.9024 5.45394 10.801 5.45394 10.6985C5.45394 10.5961 5.47419 10.4947 5.51354 10.4001C5.55289 10.3055 5.61054 10.2197 5.6832 10.1474L9.3282 6.51804H0.7824C0.3504 6.51804 0 6.16944 0 5.73864C0 5.30844 0.3504 4.95924 0.7824 4.95924H9.3282L5.6838 1.32984C5.61114 1.25763 5.55349 1.17176 5.51414 1.07718C5.47479 0.982603 5.45454 0.881177 5.45454 0.77874C5.45454 0.676303 5.47479 0.574877 5.51414 0.480298C5.55349 0.385718 5.61114 0.299852 5.6838 0.22764C5.83099 0.081812 6.0298 0 6.237 0C6.4442 0 6.64301 0.081812 6.7902 0.22764Z" fill="white"/>
+					</svg>
+				</a>
+			</div>
+			<div class="models__items grid">
+				<a href="#" class="models__item">
+					<img src="./assets/images/models-img1.jpg" alt="Archmodels for UE vol 8 - the whole city district" class="models__item__img">
+					<div class="models__item__price">
+						<span class="models__item__price-discount">-30%</span><span class="models__item__price-cost">$7.00</span>
+					</div>
+					<div class="models__item__info">
+						<h3>Archmodels for UE vol 8 - the whole city district</h3>
+						<div class="models__item__review">
+							<div class="models__item__review__name">
+								<img src="./assets/images/review-img 1.webp" alt="by Evermotion">
+								<span>by Evermotion</span>
+							</div>
+							<div class="models__item__review__rating item__review__rating">
+								<div class="models__item__review__rating-wrap item__review__rating-wrap">
+									<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#1B1D2A"/>
+								</svg>
+							</div>
+								<span>4.3</span>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="#" class="models__item">
+					<img src="./assets/images/models-img2.jpg" alt="Archmodels for UE vol 8 - the whole city district" class="models__item__img">
+					<div class="models__item__price">
+						<span class="models__item__price-discount">-30%</span><span class="models__item__price-cost">$27.00</span>
+					</div>
+					<div class="models__item__info">
+						<h3>Archmodels for UE vol 8 - the whole city district</h3>
+						<div class="models__item__review">
+							<div class="models__item__review__name">
+								<img src="./assets/images/review-img 1.webp" alt="by Evermotion">
+								<span>by Evermotion</span>
+							</div>
+							<div class="models__item__review__rating item__review__rating">
+								<div class="models__item__review__rating-wrap item__review__rating-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#1B1D2A"/>
+								</svg></div>
+
+								<span>4.3</span>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="#" class="models__item">
+					<img src="./assets/images/models-img3.jpg" alt="Archmodels for UE vol 8 - the whole city district" class="models__item__img">
+					<div class="models__item__price">
+						<span class="models__item__price-discount">-30%</span><span class="models__item__price-cost">$207.00</span>
+					</div>
+					<div class="models__item__info">
+						<h3>Archmodels for UE vol 8</h3>
+						<div class="models__item__review">
+							<div class="models__item__review__name">
+								<img src="./assets/images/review-img 1.webp" alt="by Evermotion">
+								<span>by Evermotion</span>
+							</div>
+							<div class="models__item__review__rating item__review__rating">
+								<div class="models__item__review__rating-wrap item__review__rating-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#1B1D2A"/>
+								</svg></div>
+
+								<span>4.3</span>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="#" class="models__item">
+					<img src="./assets/images/models-img4.jpg" alt="Archmodels for UE vol 8 - the whole city district" class="models__item__img">
+					<div class="models__item__price">
+						<span class="models__item__price-discount">-30%</span><span class="models__item__price-cost">$2007.00</span>
+					</div>
+					<div class="models__item__info">
+						<h3>Archmodels for UE vol 8 Archmodels for UE vol 8 Archmodels for UE vol 8Archmodels for UE vol 8</h3>
+						<div class="models__item__review">
+							<div class="models__item__review__name">
+								<img src="./assets/images/review-img 1.webp" alt="by Evermotion">
+								<span>by Evermotion</span>
+							</div>
+							<div class="models__item__review__rating item__review__rating">
+								<div class="models__item__review__rating-wrap item__review__rating-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#1B1D2A"/>
+								</svg></div>
+								<span>4.3</span>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="#" class="models__item">
+					<img src="./assets/images/models-img5.jpg" alt="Archmodels for UE vol 8 - the whole city district" class="models__item__img">
+					<div class="models__item__price">
+						<span class="models__item__price-discount">-30%</span><span class="models__item__price-cost">$2007.00</span>
+					</div>
+					<div class="models__item__info">
+						<h3>Archmodels for UE vol 8</h3>
+						<div class="models__item__review">
+							<div class="models__item__review__name">
+								<img src="./assets/images/review-img 1.webp" alt="by Evermotion">
+								<span>by Evermotion</span>
+							</div>
+							<div class="models__item__review__rating item__review__rating">
+								<div class="models__item__review__rating-wrap item__review__rating-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#1B1D2A"/>
+								</svg></div>
+
+								<span>4.3</span>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="#" class="models__item">
+					<img src="./assets/images/models-img6.jpg" alt="Archmodels for UE vol 8 - the whole city district" class="models__item__img">
+					<div class="models__item__price">
+						<span class="models__item__price-discount">-30%</span><span class="models__item__price-cost">$2007.00</span>
+					</div>
+					<div class="models__item__info">
+						<h3>Archmodels for UE vol 8</h3>
+						<div class="models__item__review">
+							<div class="models__item__review__name">
+								<img src="./assets/images/review-img 1.webp" alt="by Evermotion">
+								<span>by Evermotion</span>
+							</div>
+							<div class="models__item__review__rating item__review__rating">
+								<div class="models__item__review__rating-wrap item__review__rating-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#1B1D2A"/>
+								</svg></div>
+
+								<span>4.3</span>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="#" class="models__item">
+					<img src="./assets/images/models-img7.jpg" alt="Archmodels for UE vol 8 - the whole city district" class="models__item__img">
+					<div class="models__item__price">
+						<span class="models__item__price-discount">-30%</span><span class="models__item__price-cost">$2007.00</span>
+					</div>
+					<div class="models__item__info">
+						<h3>Archmodels for UE vol 8</h3>
+						<div class="models__item__review">
+							<div class="models__item__review__name">
+								<img src="./assets/images/review-img 1.webp" alt="by Evermotion">
+								<span>by Evermotion</span>
+							</div>
+							<div class="models__item__review__rating item__review__rating">
+								<div class="models__item__review__rating-wrap item__review__rating-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#1B1D2A"/>
+								</svg></div>
+
+								<span>4.3</span>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="#" class="models__item">
+					<img src="./assets/images/models-img8.jpg" alt="Archmodels for UE vol 8 - the whole city district" class="models__item__img">
+					<div class="models__item__price">
+						<span class="models__item__price-discount">-30%</span><span class="models__item__price-cost">$2007.00</span>
+					</div>
+					<div class="models__item__info">
+						<h3>Archmodels for UE vol 8</h3>
+						<div class="models__item__review">
+							<div class="models__item__review__name">
+								<img src="./assets/images/review-img 1.webp" alt="by Evermotion">
+								<span>by Evermotion</span>
+							</div>
+							<div class="models__item__review__rating item__review__rating">
+								<div class="models__item__review__rating-wrap item__review__rating-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#1B1D2A"/>
+								</svg></div>
+
+								<span>4.3</span>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="#" class="models__item">
+					<img src="./assets/images/models-img9.jpg" alt="Archmodels for UE vol 8 - the whole city district" class="models__item__img">
+					<div class="models__item__price">
+						<span class="models__item__price-discount">-30%</span><span class="models__item__price-cost">$2007.00</span>
+					</div>
+					<div class="models__item__info">
+						<h3>Archmodels for UE vol 8</h3>
+						<div class="models__item__review">
+							<div class="models__item__review__name">
+								<img src="./assets/images/review-img 1.webp" alt="by Evermotion">
+								<span>by Evermotion</span>
+							</div>
+							<div class="models__item__review__rating item__review__rating">
+								<div class="models__item__review__rating-wrap item__review__rating-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#1B1D2A"/>
+								</svg></div>
+
+								<span>4.3</span>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="#" class="models__item">
+					<img src="./assets/images/models-img10.jpg" alt="Archmodels for UE vol 8 - the whole city district" class="models__item__img">
+					<div class="models__item__price">
+						<span class="models__item__price-discount">-30%</span><span class="models__item__price-cost">$2007.00</span>
+					</div>
+					<div class="models__item__info">
+						<h3>Archmodels for UE vol 8</h3>
+						<div class="models__item__review">
+							<div class="models__item__review__name">
+								<img src="./assets/images/review-img 1.webp" alt="by Evermotion">
+								<span>by Evermotion</span>
+							</div>
+							<div class="models__item__review__rating item__review__rating">
+								<div class="models__item__review__rating-wrap item__review__rating-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#1B1D2A"/>
+								</svg></div>
+								<span>4.3</span>
+							</div>
+						</div>
+					</div>
+				</a>			
+			</div>
+		</div>
+	</div>
+</section>
+<section class="creators">
+	<div class="container-l">
+		<div class="creators__container">
+			<div class="creators__title justify-title">
+				<div class="creators__title__wrap justify-title__wrap">
+					<h2>Top Creators</h2>
+					<p>Our community’s most inspiring 3D creators</p>
+				</div>
+				<a href="#" class="button btn-secondary">
+					Browse all 3D models
+					<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M6.7902 0.22764L11.7708 5.18784C12.0768 5.49204 12.0768 5.98584 11.7708 6.29004L6.7908 11.2496C6.64356 11.3958 6.44449 11.4779 6.237 11.4779C6.02951 11.4779 5.83044 11.3958 5.6832 11.2496C5.61054 11.1774 5.55289 11.0916 5.51354 10.997C5.47419 10.9024 5.45394 10.801 5.45394 10.6985C5.45394 10.5961 5.47419 10.4947 5.51354 10.4001C5.55289 10.3055 5.61054 10.2197 5.6832 10.1474L9.3282 6.51804H0.7824C0.3504 6.51804 0 6.16944 0 5.73864C0 5.30844 0.3504 4.95924 0.7824 4.95924H9.3282L5.6838 1.32984C5.61114 1.25763 5.55349 1.17176 5.51414 1.07718C5.47479 0.982603 5.45454 0.881177 5.45454 0.77874C5.45454 0.676303 5.47479 0.574877 5.51414 0.480298C5.55349 0.385718 5.61114 0.299852 5.6838 0.22764C5.83099 0.081812 6.0298 0 6.237 0C6.4442 0 6.64301 0.081812 6.7902 0.22764Z" fill="white"/>
+					</svg>
+				</a>
+			</div>
+			<div class="creators__items grid">
+				<div class="creators__item">
+					<div class="creators__item__top">
+						<img src="./assets/images/creator-img1.svg" class="creators__item__top__img" />
+						<div class="creators__item__top__info">
+							<div class="creators__item__name">Evermotion</div>
+							<div class="creators__item__review__rating item__review__rating">
+								<div class="creators__item__review__rating-wrap item__review__rating-wrap">
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#ffffff"/>
+								</svg>
+							</div>
+								<span>4.3</span>
+							</div>
+							<div class="creators__item__count">
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
+									<g clip-path="url(#clip0_382_326)">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M11.8831 3.49837C11.8081 3.36474 11.7022 3.25398 11.5754 3.17676L6.40616 0.111609C6.28165 0.0387827 6.142 0.000390649 6 0C5.85995 0.00036004 5.72229 0.0387892 5.6 0.111609L0.430777 3.17676C0.302243 3.25379 0.194223 3.36447 0.116925 3.49837C0.0418202 3.63598 0.0015278 3.79204 0 3.95126V10.0488C0.0015278 10.208 0.0418202 10.364 0.116925 10.5016C0.190878 10.6384 0.29972 10.7499 0.430777 10.8233L5.6 13.8884C5.72229 13.9613 5.85995 13.9997 6 14C6.142 13.9996 6.28165 13.9613 6.40616 13.8884L11.5754 10.8233C11.7053 10.7483 11.8138 10.6371 11.8892 10.5016C11.9625 10.3635 12.0006 10.2074 12 10.0488V3.95126C12.0012 3.79165 11.9607 3.63483 11.8831 3.49837ZM6 0.997669L10.5908 3.72155L6 6.43882L1.41538 3.72155L6 0.997669ZM0.923077 4.55509L5.53846 7.29211V12.7267L0.923077 9.99628V4.55509ZM6.46154 12.7267V7.29211L11.0769 4.55509V9.99628L6.46154 12.7267Z" fill="white"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_382_326">
+									<rect width="12" height="14" fill="white"/>
+									</clipPath>
+									</defs>
+									</svg>
+									<span>12940 models</span>
+							</div>
+						</div>
+					</div>
+					<div class="creators__item__bottom">
+						<a href="#" class="models__item">
+					<img src="./assets/images/models-img2.jpg" alt="Archmodels for UE vol 8 - the whole city district" class="models__item__img">
+					<div class="models__item__price">
+						<span class="models__item__price-discount">-30%</span><span class="models__item__price-cost">$27.00</span>
+					</div>
+					<div class="models__item__info">
+						<h3>Archmodels for UE vol 8 - the whole city district</h3>						
+					</div>
+				</a>
+					</div>
+				</div>
+				<div class="creators__item">
+					<div class="creators__item__top">
+						<img src="./assets/images/creator-img1.svg" class="creators__item__top__img" />
+						<div class="creators__item__top__info">
+							<div class="creators__item__name">Evermotion</div>
+							<div class="creators__item__review__rating item__review__rating">
+								<div class="creators__item__review__rating-wrap item__review__rating-wrap">
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#ffffff"/>
+								</svg>
+							</div>
+								<span>4.3</span>
+							</div>
+							<div class="creators__item__count">
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
+									<g clip-path="url(#clip0_382_326)">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M11.8831 3.49837C11.8081 3.36474 11.7022 3.25398 11.5754 3.17676L6.40616 0.111609C6.28165 0.0387827 6.142 0.000390649 6 0C5.85995 0.00036004 5.72229 0.0387892 5.6 0.111609L0.430777 3.17676C0.302243 3.25379 0.194223 3.36447 0.116925 3.49837C0.0418202 3.63598 0.0015278 3.79204 0 3.95126V10.0488C0.0015278 10.208 0.0418202 10.364 0.116925 10.5016C0.190878 10.6384 0.29972 10.7499 0.430777 10.8233L5.6 13.8884C5.72229 13.9613 5.85995 13.9997 6 14C6.142 13.9996 6.28165 13.9613 6.40616 13.8884L11.5754 10.8233C11.7053 10.7483 11.8138 10.6371 11.8892 10.5016C11.9625 10.3635 12.0006 10.2074 12 10.0488V3.95126C12.0012 3.79165 11.9607 3.63483 11.8831 3.49837ZM6 0.997669L10.5908 3.72155L6 6.43882L1.41538 3.72155L6 0.997669ZM0.923077 4.55509L5.53846 7.29211V12.7267L0.923077 9.99628V4.55509ZM6.46154 12.7267V7.29211L11.0769 4.55509V9.99628L6.46154 12.7267Z" fill="white"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_382_326">
+									<rect width="12" height="14" fill="white"/>
+									</clipPath>
+									</defs>
+									</svg>
+									<span>12940 models</span>
+							</div>
+						</div>
+					</div>
+					<div class="creators__item__bottom">
+						<a href="#" class="models__item">
+					<img src="./assets/images/models-img2.jpg" alt="Archmodels for UE vol 8 - the whole city district" class="models__item__img">
+					<div class="models__item__price">
+						<span class="models__item__price-discount">-30%</span><span class="models__item__price-cost">$27.00</span>
+					</div>
+					<div class="models__item__info">
+						<h3>Archmodels for UE vol 8 - the whole city district</h3>						
+					</div>
+				</a>
+					</div>
+				</div>
+				<div class="creators__item">
+					<div class="creators__item__top">
+						<img src="./assets/images/creator-img1.svg" class="creators__item__top__img" />
+						<div class="creators__item__top__info">
+							<div class="creators__item__name">Evermotion</div>
+							<div class="creators__item__review__rating item__review__rating">
+								<div class="creators__item__review__rating-wrap item__review__rating-wrap">
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#ffffff"/>
+								</svg>
+							</div>
+								<span>4.3</span>
+							</div>
+							<div class="creators__item__count">
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
+									<g clip-path="url(#clip0_382_326)">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M11.8831 3.49837C11.8081 3.36474 11.7022 3.25398 11.5754 3.17676L6.40616 0.111609C6.28165 0.0387827 6.142 0.000390649 6 0C5.85995 0.00036004 5.72229 0.0387892 5.6 0.111609L0.430777 3.17676C0.302243 3.25379 0.194223 3.36447 0.116925 3.49837C0.0418202 3.63598 0.0015278 3.79204 0 3.95126V10.0488C0.0015278 10.208 0.0418202 10.364 0.116925 10.5016C0.190878 10.6384 0.29972 10.7499 0.430777 10.8233L5.6 13.8884C5.72229 13.9613 5.85995 13.9997 6 14C6.142 13.9996 6.28165 13.9613 6.40616 13.8884L11.5754 10.8233C11.7053 10.7483 11.8138 10.6371 11.8892 10.5016C11.9625 10.3635 12.0006 10.2074 12 10.0488V3.95126C12.0012 3.79165 11.9607 3.63483 11.8831 3.49837ZM6 0.997669L10.5908 3.72155L6 6.43882L1.41538 3.72155L6 0.997669ZM0.923077 4.55509L5.53846 7.29211V12.7267L0.923077 9.99628V4.55509ZM6.46154 12.7267V7.29211L11.0769 4.55509V9.99628L6.46154 12.7267Z" fill="white"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_382_326">
+									<rect width="12" height="14" fill="white"/>
+									</clipPath>
+									</defs>
+									</svg>
+									<span>12940 models</span>
+							</div>
+						</div>
+					</div>
+					<div class="creators__item__bottom">
+						<a href="#" class="models__item">
+					<img src="./assets/images/models-img2.jpg" alt="Archmodels for UE vol 8 - the whole city district" class="models__item__img">
+					<div class="models__item__price">
+						<span class="models__item__price-discount">-30%</span><span class="models__item__price-cost">$27.00</span>
+					</div>
+					<div class="models__item__info">
+						<h3>Archmodels for UE vol 8 - the whole city district</h3>						
+					</div>
+				</a>
+					</div>
+				</div>
+				<div class="creators__item">
+					<div class="creators__item__top">
+						<img src="./assets/images/creator-img1.svg" class="creators__item__top__img" />
+						<div class="creators__item__top__info">
+							<div class="creators__item__name">Evermotion</div>
+							<div class="creators__item__review__rating item__review__rating">
+								<div class="creators__item__review__rating-wrap item__review__rating-wrap">
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#ffffff"/>
+								</svg>
+							</div>
+								<span>4.3</span>
+							</div>
+							<div class="creators__item__count">
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
+									<g clip-path="url(#clip0_382_326)">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M11.8831 3.49837C11.8081 3.36474 11.7022 3.25398 11.5754 3.17676L6.40616 0.111609C6.28165 0.0387827 6.142 0.000390649 6 0C5.85995 0.00036004 5.72229 0.0387892 5.6 0.111609L0.430777 3.17676C0.302243 3.25379 0.194223 3.36447 0.116925 3.49837C0.0418202 3.63598 0.0015278 3.79204 0 3.95126V10.0488C0.0015278 10.208 0.0418202 10.364 0.116925 10.5016C0.190878 10.6384 0.29972 10.7499 0.430777 10.8233L5.6 13.8884C5.72229 13.9613 5.85995 13.9997 6 14C6.142 13.9996 6.28165 13.9613 6.40616 13.8884L11.5754 10.8233C11.7053 10.7483 11.8138 10.6371 11.8892 10.5016C11.9625 10.3635 12.0006 10.2074 12 10.0488V3.95126C12.0012 3.79165 11.9607 3.63483 11.8831 3.49837ZM6 0.997669L10.5908 3.72155L6 6.43882L1.41538 3.72155L6 0.997669ZM0.923077 4.55509L5.53846 7.29211V12.7267L0.923077 9.99628V4.55509ZM6.46154 12.7267V7.29211L11.0769 4.55509V9.99628L6.46154 12.7267Z" fill="white"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_382_326">
+									<rect width="12" height="14" fill="white"/>
+									</clipPath>
+									</defs>
+									</svg>
+									<span>12940 models</span>
+							</div>
+						</div>
+					</div>
+					<div class="creators__item__bottom">
+						<a href="#" class="models__item">
+					<img src="./assets/images/models-img2.jpg" alt="Archmodels for UE vol 8 - the whole city district" class="models__item__img">
+					<div class="models__item__price">
+						<span class="models__item__price-discount">-30%</span><span class="models__item__price-cost">$27.00</span>
+					</div>
+					<div class="models__item__info">
+						<h3>Archmodels for UE vol 8 - the whole city district</h3>						
+					</div>
+				</a>
+					</div>
+				</div>
+				<div class="creators__item">
+					<div class="creators__item__top">
+						<img src="./assets/images/creator-img1.svg" class="creators__item__top__img" />
+						<div class="creators__item__top__info">
+							<div class="creators__item__name">Evermotion</div>
+							<div class="creators__item__review__rating item__review__rating">
+								<div class="creators__item__review__rating-wrap item__review__rating-wrap">
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#FFC450"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+								<path d="M5.7063 0L7.43439 3.62149L11.4126 4.1459L8.50241 6.90851L9.23301 10.8541L5.7063 8.94L2.17959 10.8541L2.91019 6.90851L-4.00543e-05 4.1459L3.97821 3.62149L5.7063 0Z" fill="#ffffff"/>
+								</svg>
+							</div>
+								<span>4.3</span>
+							</div>
+							<div class="creators__item__count">
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
+									<g clip-path="url(#clip0_382_326)">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M11.8831 3.49837C11.8081 3.36474 11.7022 3.25398 11.5754 3.17676L6.40616 0.111609C6.28165 0.0387827 6.142 0.000390649 6 0C5.85995 0.00036004 5.72229 0.0387892 5.6 0.111609L0.430777 3.17676C0.302243 3.25379 0.194223 3.36447 0.116925 3.49837C0.0418202 3.63598 0.0015278 3.79204 0 3.95126V10.0488C0.0015278 10.208 0.0418202 10.364 0.116925 10.5016C0.190878 10.6384 0.29972 10.7499 0.430777 10.8233L5.6 13.8884C5.72229 13.9613 5.85995 13.9997 6 14C6.142 13.9996 6.28165 13.9613 6.40616 13.8884L11.5754 10.8233C11.7053 10.7483 11.8138 10.6371 11.8892 10.5016C11.9625 10.3635 12.0006 10.2074 12 10.0488V3.95126C12.0012 3.79165 11.9607 3.63483 11.8831 3.49837ZM6 0.997669L10.5908 3.72155L6 6.43882L1.41538 3.72155L6 0.997669ZM0.923077 4.55509L5.53846 7.29211V12.7267L0.923077 9.99628V4.55509ZM6.46154 12.7267V7.29211L11.0769 4.55509V9.99628L6.46154 12.7267Z" fill="white"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_382_326">
+									<rect width="12" height="14" fill="white"/>
+									</clipPath>
+									</defs>
+									</svg>
+									<span>12940 models</span>
+							</div>
+						</div>
+					</div>
+					<div class="creators__item__bottom">
+						<a href="#" class="models__item">
+					<img src="./assets/images/models-img2.jpg" alt="Archmodels for UE vol 8 - the whole city district" class="models__item__img">
+					<div class="models__item__price">
+						<span class="models__item__price-discount">-30%</span><span class="models__item__price-cost">$27.00</span>
+					</div>
+					<div class="models__item__info">
+						<h3>Archmodels for UE vol 8 - the whole city district</h3>						
+					</div>
+				</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="choose">
+	<div class="container">
+		<div class="choose__container">
+			<div class="choose__title">
+				<h2>Why choose READY 3D </h2>
+				<p>READY 3D delivers high-quality 3D models crafted by professionals <strong> for creators, brands, and studios worldwide</strong>. We combine precision, realism, and speed to help you bring any idea to life — from concept to final render.</p>
+			</div>
+			<div class="choose__items">
+				<div class="choose__item">
+					<img src="./assets/images/choose-img1.webp" alt="For buyers" class="choose__item__img">
+					<div class="choose__item__content">
+						<div class="choose__item__title">For buyers</div>
+						<ul>
+							<li><strong>From idea to result.</strong> Download a ready-made model or order a custom design — all in just a few clicks.</li>
+							<li><strong>Everything you need</strong> — in one place. Models, design, printing, and delivery are combined in a single ecosystem.</li>
+							<li><strong>Monetize your creativity.</strong> Sell models, earn royalties, and find customers for custom orders around the world.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="choose__item">
+					<img src="./assets/images/choose-img2.webp" alt="For authors" class="choose__item__img">
+					<div class="choose__item__content">
+						<div class="choose__item__title">For authors</div>
+						<ul>
+							<li><strong>Monetize your creativity.</strong> Sell models, earn royalties, and find customers for custom orders around the world.</li>
+							<li><strong>Create your personal brand.</strong> Author pages, ratings, and promotion will help you stand out.</li>
+							<li><strong>Grow with us.</strong> Analytics, promotion and sales tools, expert support at every stage.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="choose__item">
+					<img src="./assets/images/choose-img3.webp" alt="More than a marketplace" class="choose__item__img">
+					<div class="choose__item__content">
+						<div class="choose__item__title">More than a marketplace</div>
+						<ul>
+							<li><strong>An entire 3D ecosystem.</strong>  From ready-made models to custom design and printing — all on one platform.</li>
+							<li><strong>Reliability and support. </strong> Secure transactions, copyright protection, transparent monetization, and 24/7 assistance.</li>
+							<li><strong>Global opportunities.</strong> Thousands of buyers around the world.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="partners img-bg">
+	<div class="partners__container">
+		<div class="marquee" >
+			<div class="marquee__wrap">
+			<img src="./assets/images/partners-img1.svg" alt="">
+			<img src="./assets/images/partners-img2.svg" alt="">
+			<img src="./assets/images/partners-img3.svg" alt="">
+			<img src="./assets/images/partners-img4.svg" alt="">
+			<img src="./assets/images/partners-img5.svg" alt="">
+			<img src="./assets/images/partners-img6.svg" alt="">
+			<img src="./assets/images/partners-img7.svg" alt="">
+			<img src="./assets/images/partners-img8.svg" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+<section class="faq">
+	<div class="container">
+		<div class="faq__container">
+			<div class="faq__title">
+				<h2>FAQ</h2>
+				<p>Get answers to commonly asked questions about Ready 3D.</p>
+			</div>
+			<div class="faq__items accord">
+						<div class="faq__item accord-item" >
+						<div class="faq__item__top accord-item-top">
+							<p>How to download a model?</p>
+							<div class="faq-icon-wrapper"></div>
+						</div>
+						<div class="faq__item-bottom accord-item-bottom">
+							<div class="faq__item-bottom-wrap">
+							<p>To download a 3D model, open the model’s page and look for the “Download” button below the viewer. If the creator has allowed downloads, you’ll see available file formats (such as .obj, .fbx, or .glb). Select your preferred format and the download will start automatically. If there’s no download option, it means the author has restricted access to the model — in that case, you can either contact the creator directly or look for similar models with open download permissions.</p>
+							</div>
+						</div>
+						</div>
+						<div class="faq__item accord-item" >
+						<div class="faq__item__top accord-item-top">
+							<p>How do I sell my model?</p>
+							<div class="faq-icon-wrapper"></div>
+						</div>
+						<div class="faq__item-bottom accord-item-bottom">
+							<div class="faq__item-bottom-wrap">
+							<p>To download a 3D model, open the model’s page and look for the “Download” button below the viewer. If the creator has allowed downloads, you’ll see available file formats (such as .obj, .fbx, or .glb). Select your preferred format and the download will start automatically. If there’s no download option, it means the author has restricted access to the model — in that case, you can either contact the creator directly or look for similar models with open download permissions.</p>
+							</div>
+						</div>
+						</div>
+						<div class="faq__item accord-item" >
+						<div class="faq__item__top accord-item-top">
+							<p>How do I order prints?</p>
+							<div class="faq-icon-wrapper"></div>
+						</div>
+						<div class="faq__item-bottom accord-item-bottom">
+							<div class="faq__item-bottom-wrap">
+							<p>To download a 3D model, open the model’s page and look for the “Download” button below the viewer. If the creator has allowed downloads, you’ll see available file formats (such as .obj, .fbx, or .glb). Select your preferred format and the download will start automatically. If there’s no download option, it means the author has restricted access to the model — in that case, you can either contact the creator directly or look for similar models with open download permissions.</p>
+							</div>
+						</div>
+						</div>
+						<div class="faq__item accord-item" >
+						<div class="faq__item__top accord-item-top">
+							<p>How are royalties paid to authors?</p>
+							<div class="faq-icon-wrapper"></div>
+						</div>
+						<div class="faq__item-bottom accord-item-bottom">
+							<div class="faq__item-bottom-wrap">
+							<p>To download a 3D model, open the model’s page and look for the “Download” button below the viewer. If the creator has allowed downloads, you’ll see available file formats (such as .obj, .fbx, or .glb). Select your preferred format and the download will start automatically. If there’s no download option, it means the author has restricted access to the model — in that case, you can either contact the creator directly or look for similar models with open download permissions.</p>
+							</div>
+						</div>
+						</div>
+						<div class="faq__item accord-item" >
+						<div class="faq__item__top accord-item-top">
+							<p>How do I protect my intellectual property?</p>
+							<div class="faq-icon-wrapper"></div>
+						</div>
+						<div class="faq__item-bottom accord-item-bottom">
+							<div class="faq__item-bottom-wrap">
+							<p>To download a 3D model, open the model’s page and look for the “Download” button below the viewer. If the creator has allowed downloads, you’ll see available file formats (such as .obj, .fbx, or .glb). Select your preferred format and the download will start automatically. If there’s no download option, it means the author has restricted access to the model — in that case, you can either contact the creator directly or look for similar models with open download permissions.</p>
+							</div>
+						</div>
+						</div>
+				</div>
+		</div>
+	</div>
+</section>
+<footer class="footer">
+	<div class="container-l">
+		<div class="footer__container">
+			<div class="footer__top">
+				<div class="footer__info">
+					<div class="footer__info__logo">
+					<a href="#" class="logo">
+						<img src="./assets/images/logo.svg" alt="ready-3d">
+					</a>
+					<p>We are a team of passionate people whose goal is to improve everyone's life. Our services are designed for small to medium size companies.</p>
+					</div>
+					<hr>
+					<div class="footer__info__copy">
+						<img src="./assets/images/C-MES.svg" alt="C-Mes">
+						<p>Copyright © 2018 C-MES Solutions Ltd. All rights reserved</p>
+					</div>
+				</div>
+				<div class="footer__items">
+					<div class="footer__item footer__item__nav">
+					<div class="footer__item__title">Menu</div>
+					<nav>
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Contact us</a></li>
+							<li><a href="#">Help</a></li>
+							<li><a href="#">Forum</a></li>
+						</ul>
+					</nav>
+					</div>
+					<div class="footer__item footer__item__contacts">
+						<div class="footer__item__title">Contacts</div>
+						<div class="footer__item__contacts contacts">
+							<a href="tel:(+44) 208 068 4673">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_286_620)">
+									<path d="M15.4485 11.995C14.8885 11.4141 14.1606 11.4141 13.5774 11.995C13.1387 12.4318 12.7048 12.8639 12.2661 13.3007C12.1448 13.4216 12.0468 13.4448 11.9022 13.375C11.6362 13.2078 11.3189 13.087 11.0529 12.9151C9.78836 12.1158 8.71976 11.0982 7.77254 9.94118C7.31058 9.36032 6.89995 8.75629 6.60598 8.05462C6.55932 7.91057 6.55932 7.83623 6.68064 7.71542C7.1426 7.30186 7.55323 6.86972 7.99185 6.43293C8.59848 5.82886 8.59848 5.12721 7.99185 4.52315C7.62788 4.1607 7.28725 3.8215 6.94662 3.48229C6.58265 3.11985 6.24202 2.75741 5.87805 2.4182C5.3181 1.8606 4.59017 1.8606 4.00689 2.4182C3.56826 2.85499 3.1343 3.28713 2.69568 3.72392C2.28038 4.13747 2.06573 4.62073 2.01441 5.17368C1.93975 6.07049 2.15906 6.93942 2.47636 7.78511C3.1343 9.55085 4.12821 11.0749 5.3181 12.5015C6.94662 14.4392 8.88776 15.9633 11.1509 17.0506C12.1728 17.5338 13.2181 17.9196 14.3333 17.9939C15.1359 18.0403 15.8171 17.8266 16.3724 17.2179C16.7364 16.7811 17.175 16.4186 17.5623 16.0097C18.1455 15.4057 18.1455 14.6808 17.5623 14.1C16.8577 13.3983 16.1531 12.6966 15.4485 11.995Z" fill="#1B1D2A"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_286_620">
+									<rect width="16" height="16" fill="white" transform="translate(1.99976 2)"/>
+									</clipPath>
+									</defs>
+									</svg>
+								<span>(+44) 208 068 4673</span>
+							</a>
+							<a href="mailto:ready-3d@c-mes.co.uk">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+									<path d="M18.8414 4.5957L13.3821 10.0199L18.8414 15.4441C18.9401 15.2378 19 15.0098 19 14.7663V5.27352C19 5.02998 18.9401 4.80198 18.8414 4.5957Z" fill="#1B1D2A"/>
+									<path d="M17.4187 3.69238H2.58187C2.33833 3.69238 2.11033 3.75225 1.90405 3.85095L8.88169 10.7934C9.49865 11.4104 10.502 11.4104 11.1189 10.7934L18.0965 3.85095C17.8902 3.75225 17.6623 3.69238 17.4187 3.69238Z" fill="#1B1D2A"/>
+									<path d="M1.15808 4.5957C1.05939 4.80198 0.999512 5.02998 0.999512 5.27352V14.7663C0.999512 15.0098 1.05939 15.2379 1.15808 15.4441L6.61743 10.0199L1.15808 4.5957Z" fill="#1B1D2A"/>
+									<path d="M12.6372 10.7661L11.8646 11.5386C10.8366 12.5667 9.1639 12.5667 8.13591 11.5386L7.3634 10.7661L1.90405 16.1903C2.11033 16.289 2.33833 16.3489 2.58187 16.3489H17.4187C17.6623 16.3489 17.8902 16.289 18.0965 16.1903L12.6372 10.7661Z" fill="#1B1D2A"/>
+									</svg>
+								<span>ready-3d@c-mes.co.uk</span>
+							</a>
+							<a href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+									<path d="M9.5 3C5.91785 3 3 5.7631 3 9.1539C3 10.8973 3.9165 12.6961 5.1047 14.3786C6.29355 16.0616 7.7801 17.6266 9.04045 18.8198C9.16234 18.9352 9.32764 19 9.5 19C9.67236 19 9.83766 18.9352 9.95955 18.8198C11.2485 17.5995 12.735 16.034 13.9167 14.357C15.0984 12.6807 16 10.8936 16 9.1539C16 5.7631 13.0821 3 9.5 3ZM9.5 6.69234C10.928 6.69234 12.1 7.80189 12.1 9.1539C12.1 10.5059 10.928 11.6155 9.5 11.6155C8.07195 11.6155 6.9 10.5059 6.9 9.1539C6.9 7.80189 8.07195 6.69234 9.5 6.69234Z" fill="#1B1D2A"/>
+									</svg>
+								<span>6-7 St. Mary At Hill London, United Kingdom, EC3R8EE</span></a>
+						</div>
+					</div>
+					<div class="footer__item footer__item__socials">
+						<div class="footer__item__title">Follow</div>
+						<div class="footer__item__socials socials">
+							<a href="#" target="_blank" rel="nofollow">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+									<g clip-path="url(#clip0_286_641)">
+									<path d="M11.5489 20V10.8777H14.6097L15.0689 7.32156H11.5489V5.05147C11.5489 4.0222 11.8336 3.32076 13.3112 3.32076L15.1928 3.31999V0.13923C14.8674 0.0969453 13.7505 0 12.4505 0C9.73586 0 7.87739 1.65697 7.87739 4.69927V7.32156H4.80737V10.8777H7.87739V20H11.5489Z" fill="#1B1D2A"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_286_641">
+									<rect width="20" height="20" fill="white"/>
+									</clipPath>
+									</defs>
+									</svg>
+							</a>
+							<a href="#" target="_blank" rel="nofollow">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+									<g clip-path="url(#clip0_286_645)">
+									<path d="M9.61718 1.73185C12.1868 1.73185 12.4911 1.74312 13.5017 1.7882C14.4409 1.82953 14.948 1.98731 15.2861 2.11879C15.7332 2.2916 16.0563 2.50198 16.3906 2.83633C16.7287 3.17444 16.9354 3.49375 17.1082 3.94081C17.2396 4.27892 17.3975 4.78983 17.4387 5.72525C17.4838 6.73957 17.4951 7.04386 17.4951 9.60973C17.4951 12.1793 17.4838 12.4836 17.4387 13.4942C17.3975 14.4334 17.2396 14.9405 17.1082 15.2786C16.9354 15.7256 16.725 16.0487 16.3906 16.3831C16.0525 16.7212 15.7332 16.9278 15.2861 17.1006C14.948 17.2321 14.4371 17.3899 13.5017 17.4312C12.4874 17.4763 12.1831 17.4875 9.61718 17.4875C7.04763 17.4875 6.74333 17.4763 5.73276 17.4312C4.79358 17.3899 4.28643 17.2321 3.94832 17.1006C3.50127 16.9278 3.17819 16.7175 2.84385 16.3831C2.50574 16.045 2.29912 15.7256 2.12631 15.2786C1.99483 14.9405 1.83704 14.4296 1.79572 13.4942C1.75064 12.4798 1.73936 12.1755 1.73936 9.60973C1.73936 7.04011 1.75064 6.73582 1.79572 5.72525C1.83704 4.78607 1.99483 4.27892 2.12631 3.94081C2.29912 3.49375 2.50949 3.17068 2.84385 2.83633C3.18195 2.49823 3.50127 2.2916 3.94832 2.11879C4.28643 1.98731 4.79735 1.82953 5.73276 1.7882C6.74333 1.74312 7.04763 1.73185 9.61718 1.73185ZM9.61718 0C7.0063 0 6.67946 0.0112702 5.65387 0.0563509C4.63205 0.101432 3.92954 0.266727 3.32095 0.503402C2.68606 0.751345 2.14885 1.07818 1.61539 1.61539C1.07818 2.14885 0.751345 2.68606 0.503402 3.31719C0.266727 3.92954 0.101432 4.62829 0.0563509 5.65012C0.0112702 6.67946 0 7.0063 0 9.61718C0 12.2282 0.0112702 12.555 0.0563509 13.5805C0.101432 14.6024 0.266727 15.3049 0.503402 15.9135C0.751345 16.5484 1.07818 17.0856 1.61539 17.6191C2.14885 18.1525 2.68606 18.4831 3.31719 18.7273C3.92954 18.964 4.62829 19.1293 5.65012 19.1744C6.67571 19.2195 7.00255 19.2307 9.61345 19.2307C12.2244 19.2307 12.5513 19.2195 13.5768 19.1744C14.5986 19.1293 15.3012 18.964 15.9097 18.7273C16.5409 18.4831 17.0781 18.1525 17.6115 17.6191C18.145 17.0856 18.4755 16.5484 18.7198 15.9173C18.9565 15.3049 19.1217 14.6062 19.1668 13.5844C19.2119 12.5587 19.2232 12.2319 19.2232 9.621C19.2232 7.01005 19.2119 6.68322 19.1668 5.65764C19.1217 4.6358 18.9565 3.93329 18.7198 3.32471C18.4831 2.68606 18.1563 2.14885 17.6191 1.61539C17.0856 1.08194 16.5484 0.751345 15.9173 0.507158C15.3049 0.270485 14.6062 0.105188 13.5844 0.0601076C12.555 0.0112702 12.2282 0 9.61718 0Z" fill="#1B1D2A"/>
+									<path d="M9.61682 4.67725C6.88948 4.67725 4.67676 6.88996 4.67676 9.61732C4.67676 12.3448 6.88948 14.5574 9.61682 14.5574C12.3443 14.5574 14.5569 12.3448 14.5569 9.61732C14.5569 6.88996 12.3443 4.67725 9.61682 4.67725ZM9.61682 12.8219C7.84744 12.8219 6.41237 11.3868 6.41237 9.61732C6.41237 7.84793 7.84744 6.41286 9.61682 6.41286C11.3863 6.41286 12.8214 7.84793 12.8214 9.61732C12.8214 11.3868 11.3863 12.8219 9.61682 12.8219Z" fill="#1B1D2A"/>
+									<path d="M15.9058 4.48193C15.9058 5.12058 15.3873 5.63525 14.7524 5.63525C14.1138 5.63525 13.5991 5.11682 13.5991 4.48193C13.5991 3.84329 14.1176 3.32861 14.7524 3.32861C15.3873 3.32861 15.9058 3.84704 15.9058 4.48193Z" fill="#1B1D2A"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_286_645">
+									<rect width="20" height="20" fill="white"/>
+									</clipPath>
+									</defs>
+									</svg>
+							</a>
+							<a href="#" target="_blank" rel="nofollow">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+									<g clip-path="url(#clip0_286_650)">
+									<path d="M11.9027 8.46429L19.3482 0H17.5838L11.1189 7.34942L5.95547 0H0L7.8082 11.1136L0 19.9897H1.76443L8.59152 12.2285L14.0445 19.9897H20L11.9027 8.46429ZM9.48608 11.2115L8.69495 10.1049L2.40018 1.29901H5.11025L10.1902 8.40562L10.9813 9.51229L17.5847 18.7498H14.8746L9.48608 11.2115Z" fill="#1B1D2A"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_286_650">
+									<rect width="20" height="20" fill="white"/>
+									</clipPath>
+									</defs>
+									</svg>
+							</a>
+							<a href="#" target="_blank" rel="nofollow">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+									<path d="M11.2109 0C5.75636 0 3 3.91273 3 7.17636C3 9.15273 3.74727 10.9091 5.35273 11.5655C5.40863 11.5949 5.47079 11.6106 5.53399 11.611C5.59718 11.6114 5.65956 11.5967 5.71587 11.568C5.77218 11.5393 5.82078 11.4975 5.85756 11.4461C5.89435 11.3947 5.91826 11.3353 5.92727 11.2727C5.98182 11.0709 6.10909 10.5618 6.16182 10.3509C6.24 10.0618 6.20909 9.96182 5.99636 9.71091C5.53455 9.16546 5.23818 8.45818 5.23818 7.45818C5.23818 4.54909 7.42 1.95455 10.8945 1.95455C13.9855 1.95455 15.6745 3.84 15.6745 6.35818C15.6745 9.67091 14.2091 12.4655 12.0382 12.4655C10.8364 12.4655 9.93636 11.4709 10.22 10.2527C10.5655 8.79818 11.2345 7.22727 11.2345 6.17636C11.2345 5.23636 10.7291 4.45091 9.68546 4.45091C8.45636 4.45091 7.46909 5.72364 7.46909 7.42545C7.46033 8.05041 7.58428 8.67012 7.83273 9.24364C7.83273 9.24364 6.57455 14.5691 6.35455 15.5036C5.91636 17.36 6.28909 19.6382 6.32 19.8673C6.32482 19.8968 6.33821 19.9243 6.35851 19.9463C6.3788 19.9682 6.40511 19.9838 6.43416 19.9909C6.46321 19.9981 6.49372 19.9966 6.52191 19.9866C6.5501 19.9765 6.57473 19.9584 6.59273 19.9345C6.70727 19.7855 8.16909 17.98 8.66727 16.1745C8.80727 15.6636 9.47455 13.0164 9.47455 13.0164C9.87455 13.7782 11.04 14.4491 12.2818 14.4491C15.9745 14.4491 18.48 11.0818 18.48 6.57636C18.4836 3.17273 15.5964 0 11.2109 0Z" fill="#1B1D2A"/>
+									</svg>
+							</a>
+							<a href="#" target="_blank" rel="nofollow">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+									<path d="M15.8463 2.92383H4.15374C1.85969 2.92383 0 4.78352 0 7.07757V12.9226C0 15.2166 1.85969 17.0763 4.15374 17.0763H15.8463C18.1403 17.0763 20 15.2166 20 12.9226V7.07757C20 4.78352 18.1403 2.92383 15.8463 2.92383ZM13.0371 10.2845L7.56814 12.8928C7.42241 12.9623 7.25408 12.8561 7.25408 12.6947V7.31488C7.25408 7.15115 7.42684 7.04503 7.57287 7.11905L13.0418 9.89045C13.2044 9.97284 13.2016 10.206 13.0371 10.2845Z" fill="#1B1D2A"/>
+									</svg>
+							</a>
+						</div>
+						<div class="footer__item__payment">
+							<div class="footer__item__payment__wrap">
+							<div>
+								<img src="./assets/images/paypal.svg" alt="paypal">
+							</div>
+							<div>
+								<img src="./assets/images/link.svg" alt="link">
+							</div>
+							<div>
+								<img src="./assets/images/applepay.svg" alt="apple pay">
+							</div>
+							<div>
+								<img src="./assets/images/gpay.svg" alt="google pay">
+							</div>
+							<div>
+								<img src="./assets/images/visa.svg" alt="visa">
+							</div>
+							<div>
+								<img src="./assets/images/mastercard.svg" alt="mastercard">
+							</div>
+							</div>
+							<span>Secure payments by Stripe</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<nav>
+					<ul>
+						<li><a href="#">Privacy policy</a></li>
+						<li><a href="#">Terms of delivery & services</a></li>
+						<li><a href="#">Billing policy</a></li>
+						<li><a href="#">Seller Agreement</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</footer>
+	<script src="./assets/js/script.js"></script>
+</body>
+</html>
