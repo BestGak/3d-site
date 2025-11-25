@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
 addAnimationInit();
 accordionFunction();
 openSubMenu();
+dropdownMenuWork();
 });
 const addAnimationInit = () => {
 
@@ -26,15 +27,24 @@ const addAnimationInit = () => {
 
 const accordionFunction = () => {
   const accordionItems = document.querySelectorAll(".accord-item");
+
   accordionItems.forEach((item) => {
-		const top = item.querySelector(".accord-item-top");
-		if(top){
-			top.addEventListener("click", function () {
-				item.classList.toggle("active");
-			});
-		}
+    const top = item.querySelector(".accord-item-top");
+    if (top) {
+      top.addEventListener("click", function () {
+        accordionItems.forEach((otherItem) => {
+          if (otherItem !== item) {
+            otherItem.classList.remove("active");
+          }
+        });
+
+        item.classList.toggle("active");
+      });
+    }
   });
 };
+
+
 
 
 const openSubMenu = () =>{
@@ -56,25 +66,23 @@ firstMenuItem.addEventListener('mouseleave', () => {
 
 }
 
-// Получаем все dropdown и пункты меню
-const dropdowns = document.querySelector('.dropdown');
-const menuItems = document.querySelectorAll('.menu-top ul > li > a');
+const dropdownMenuWork = () => {
+const menuItems = document.querySelectorAll('.menu-top ul li > a');
 
-// Настраиваем дефолтные стили
 menuItems.forEach((a, i) => {
   a.style.opacity = i === 0 ? '1' : '0.5';
-  a.style.transition = 'opacity 0.3s ease'; // плавный переход
+  a.style.transition = 'opacity 0.3s ease'; 
 });
 
-// Функция для подсветки конкретного пункта
 function highlightItem(index) {
   menuItems.forEach((a, i) => {
     a.style.opacity = i === index ? '1' : '0.5';
   });
 }
 
-// Hover на dropdown
 menuItems.forEach((dd, i) => {
   dd.addEventListener('mouseenter', () => highlightItem(i));
-  dd.addEventListener('mouseleave', () => highlightItem(0)); // возвращаем первый пункт
+  dd.addEventListener('mouseleave', () => highlightItem(0)); 
 });
+}
+
