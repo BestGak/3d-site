@@ -1539,6 +1539,11 @@ color: var(--black);
     opacity: 1;
     visibility: visible;
 }
+.dropdown:hover + .menu__wrap .menu-top li:nth-of-type(1) .header-dropdown,
+.menu__wrap:hover .menu-top li:nth-of-type(1) .header-dropdown{
+    opacity: 1;
+    visibility: visible;
+}
 
 .menu-item:first-child.open-first > .header-dropdown {
     opacity: 1;
