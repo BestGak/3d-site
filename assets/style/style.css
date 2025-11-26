@@ -567,8 +567,10 @@ transform: translateX(10px);
 
 .creators .models__item { 
 	border-radius: 0;
+	height: 100%;
+
 }
-.models__item{
+.models__item {
 	position: relative;
 	border-radius: 10px;
 	display: flex;
