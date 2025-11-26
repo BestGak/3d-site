@@ -574,6 +574,8 @@ transform: translateX(10px);
 	max-width: 100%;
 	width: 100%;
 	overflow: hidden;
+	min-width: 250px;
+	max-width: 250px;
 }
 .models__item:hover .models__item__img{
 	transform: scale(1.1);
@@ -1609,3 +1611,17 @@ color: var(--black);
         white-space: pre-wrap;
     }
 }
+
+ .carousel{
+    overflow:hidden;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+  }
+  .row{
+    display:flex;
+    position:relative;
+    width:max-content;
+    transition: transform 1.6s linear;
+	gap: 20px;
+  }
