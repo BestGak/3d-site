@@ -568,7 +568,6 @@ transform: translateX(10px);
 .creators .models__item { 
 	border-radius: 0;
 	height: 100%;
-
 }
 .models__item {
 	position: relative;
@@ -581,6 +580,12 @@ transform: translateX(10px);
 	overflow: hidden;
 	min-width: 250px;
 	max-width: 250px;
+}
+@media screen and (max-width: 550px) {
+	.models__item {
+		max-width: 100%;
+		width: calc(100vw - 40px);
+	}
 }
 .models__item:hover .models__item__img{
 	transform: scale(1.1);
@@ -665,6 +670,12 @@ background: linear-gradient(180deg, #18181C 0%, #262626 100%), #11E280;
 	flex-direction: column;
 }
 
+@media screen and (max-width: 550px) {
+	.creators__item {
+		width: calc(100vw - 40px);
+		max-width: 100%;
+	}
+}
 .creators__item__top{
 	display: flex;
 	gap: 12px;
