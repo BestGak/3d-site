@@ -581,6 +581,15 @@ transform: translateX(10px);
 	min-width: 250px;
 	max-width: 250px;
 }
+.creators-row {
+	display: flex;
+	gap: 20px;
+}
+#singleRow {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
 @media screen and (max-width: 550px) {
 	.models__item {
 		max-width: 100%;
