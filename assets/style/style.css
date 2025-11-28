@@ -1320,7 +1320,7 @@ gap: 32px;
     display: flex; 
 		flex-direction: column; 
     background-color:var(--white);
-		min-height: 450px;
+		min-height: 480px;
 		opacity: 0;
 		visibility: hidden;
 		transition: .3s linear;
@@ -1489,6 +1489,8 @@ gap: 32px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 25px auto;
+	max-height: 480px;
+	overflow-y: auto;
 }
 
 .header-col:has(ul:nth-of-type(2)) {
